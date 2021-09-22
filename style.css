@@ -1,0 +1,130 @@
+*
+{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.logo
+{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 7em;
+    text-shadow: 0 0 50px #0f0,
+                 0 0 100px #0f0,
+                 0 0 150px #0f0,
+                 0 0 200px #0f0,
+                 0 0 250px #0f0;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    margin-bottom: srem; 
+    z-index: 2;
+    pointer-events: none;
+}
+
+.button{
+    padding: 12px 22px;
+    border: 1px solid #f2f2f2 ;
+    background-color: transparent;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.button:hover{
+    color: #121212;
+    background-color: #f2f2f2;
+}
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  canvas {
+    box-align: bottom;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: #151b49;
+    background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 20%;
+  } /* ---- stats.js ---- */
+  .count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #080808;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+  #stats,
+  .count-particles {
+    user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
